@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Dash Plotly</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <div class="scriptsVARIABLES">
+        <script>
+            let lit = "&#128293;"; // 🔥
+            let flop = "&#128169;"; // 💩
+            let remember_this = "&#128161"; // 💡
+            let flask = "&#9881"; // ⚙
+            let react = "&#127912"; // 🎨
+            let component = "&#128396"; // 🖌
+            let chart = "&#128200"; // 📈
+        </script>
+    </div>
+
+    <style>
+        .reveal .footer {
+            position: absolute;
+            bottom: 1em;
+            left: 1em;
+            font-size: 0.5em;
+        }
+        .tables {
+            border-collapse: collapse;
+        }
+
+        .tables td {
+            padding: 100px;
+        }
+
+        #opensource_vs_enterprise{
+            width: 65%;
+            height: 65%;
+            margin-top: 0;
+        }
+        #flask_and_react{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <div class='footer'>
+        TINF19B4 <br>
+        31.05.2021 <br>
+        Georg Reichert
+    </div>
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <img src="SE_PR_Img/dash_plotly.png">
+        </section>
+        <!-- Aim -->
+        <section>
+            <p>The goal is to give you the information that you should consider
+                before choosing to use this framework for your project.</p>
+        </section>
+        <!-- Contents -->
+        <section>
+            <h4>Agenda</h4>
+            <ul>
+                <li>Introduction</li>
+                <li>Development</li>
+                <li>Live Coding</li>
+                <li>Deployment</li>
+                <li>Support & Online Prevalence</li>
+                <li>To Dash or Not to Dash?</li>
+            </ul>
+        </section>
+        <!-- Introduction -->
+        <section>
+            <h2>Introduction</h2>
+        </section>
+        <section>
+            <p><em>Plotly Dash</em> is a framework for building <br> web-based analytical applications.</p>
+        </section>
+        <section id="fragments">
+            <h4>Timeline</h4>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>2013</td>
+                    <td>-</td>
+                    <td>Plotly Foundation</td>
+                </tr>
+                <tr class="fragment">
+                    <td>2015</td>
+                    <td>-</td>
+                    <td>Downloads Record</td>
+                </tr>
+                <tr class="fragment">
+                    <td>2017</td>
+                    <td>-</td>
+                    <td>Beta Version of Dash</td>
+                </tr>
+                <tr class="fragment">
+                    <td>2019</td>
+                    <td>-</td>
+                    <td>Release for Python</td>
+                </tr>
+                <tr class="fragment">
+                    <td>2019</td>
+                    <td>-</td>
+                    <td>Release for R</td>
+                </tr>
+                <tr class="fragment">
+                    <td>2020</td>
+                    <td>-</td>
+                    <td>Release for Julia</td>
+                </tr>
+            </table>
+        </section>
+        <!--
+        <section>
+            <h4>Python Graphing Libraries</h4>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>plotly.py</td>
+                    <td></td>
+                    <td><script>document.write(lit)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Seaborn/Matplotlib</td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Altair/Vega-Lite</td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Bokeh </td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+            </table>
+        </section>
+        -->
+        <section>
+            <h4>Architecture</h4>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>Flask</td>
+                    <td><script>document.write(flask)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>React</td>
+                    <td><script>document.write(react)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Dash Components</td>
+                    <td><script>document.write(component)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Plotly.js</td>
+                    <td><script>document.write(chart)</script></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h4>Single-Page Application <br> and <br> Multi-Page Application</h4>
+        </section>
+        <section>
+            <h4>Open Source vs. Enterprise</h4>
+        </section>
+        <section>
+            <img src="SE_PR_Img/opensource_vs_enterprise.PNG" id="opensource_vs_enterprise">
+        </section>
+        <section>
+            <p>Enterprise version starts at $50,000/year.</p>
+        </section>
+        <!--
+        <section>
+            <table class="tables">
+                <tr>
+                    <td><script>document.write(remember_this)</script></td>
+                    <td>Officially released in early 2019 Plotly Dash has now become a language-agnostic framework built upon the most common data science programming languages.</td>
+                </tr>
+            </table>
+        </section>
+        -->
+        <!-- Architecture -->
+        <!--
+        <section>
+            <h2>Architecture</h2>
+        </section>
+        <section>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>Flask</td>
+                    <td><script>document.write(flask)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>React</td>
+                    <td><script>document.write(react)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Dash Components</td>
+                    <td><script>document.write(component)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Plotly.js</td>
+                    <td><script>document.write(chart)</script></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="fragment">
+            <h4 id="flask_and_react">Flask & React</h4>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>Flask</td>
+                    <td>micro web framework <br> light and easy</td>
+                </tr>
+                <tr class="fragment">
+                    <td>React</td>
+                    <td>JavaScript framework <br> lightweight <br> helpful</td>
+                </tr>
+            </table>
+        </section>
+        <section data-auto-animate class="fragment">
+            <h2>Dash Components</h2>
+            <pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|2,3|5|6|7-10"><script type="text/template">
+    import dash
+    import dash_core_components as dcc
+    import dash_html_components as html
+
+    app.layout = html.Div(style={children=[
+        html.H1(
+            children='Hello Dash',
+            style={
+                'textAlign': 'center',
+                'color': colors['text']
+            }
+        )
+    }
+        </script></code></pre>
+        </section>
+        <section>
+            <h4>Data Visualization</h4>
+            <table class="tables">
+                <tr>
+                    <td>plotly-js</td>
+                    <td>
+                        declarative <br>
+                        open source <br>
+                        fast <br>
+                        wide range of charts
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <table calss="tables">
+                <tr>
+                    <td><script>document.write(remember_this)</script></td>
+                    <td>Dash applications are web servers running Flask and communicating JSON packets over HTTP requests. Dash’s frontend renders components using React.js.</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h4>Python Graphing Libraries</h4>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>plotly.py</td>
+                    <td></td>
+                    <td><script>document.write(lit)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Seaborn/Matplotlib</td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Altair/Vega-Lite</td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+                <tr class="fragment">
+                    <td>Bokeh </td>
+                    <td></td>
+                    <td><script>document.write(flop)</script></td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <a href="https://github.com/plotly/dash-alternative-viz" id="dash-alternative-viz-link">dash-alternative-viz</a>
+            <br>
+            <p>is</p>
+            <small>a Python library for working with other plotting libraries within Dash</small>
+        </section>
+        -->
+        <!-- Development -->
+        <section>
+            <h2>Development</h2>
+        </section>
+        <section class="fragment">
+            <h4>Skills Needed</h4>
+            <table class="table_skills">
+                <tr class="fragment">
+                    <td>Python|R|Julia</td>
+                    <td>core</td>
+                    <td>basic dashboard</td>
+                </tr>
+                <tr class="fragment">
+                    <td>HTML</td>
+                    <td>additional</td>
+                    <td>greater control</td>
+                </tr>
+                <tr class="fragment">
+                    <td>CSS</td>
+                    <td>additional</td>
+                    <td>greater control</td>
+                </tr>
+                <tr class="fragment">
+                    <td>JS</td>
+                    <td>additional</td>
+                    <td>new components</td>
+                </tr>
+                <tr class="fragment">
+                    <td>React.js</td>
+                    <td>additional</td>
+                    <td>new components</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <table calss="tables">
+                <tr>
+                    <td><script>document.write(remember_this)</script></td>
+                    <td>app.run_server(debug=True)</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Live Coding -->
+        <section>
+            <h2>Live Coding</h2>
+            <img src="SE_PR_Img/chill.gif">
+        </section>
+        <section><img src="SE_PR_Img/example_1.gif" height="580" width="620"></section>
+        <section><img src="SE_PR_Img/example_2.gif" height="580" width="620"></section>
+        <section><img src="SE_PR_Img/example_3.gif" height="580" width="620"></section>
+        <!-- Deployment -->
+        <section>
+            <h2>Deployment</h2>
+        </section>
+        <section class="fragment">
+            <table class="tables">
+                <tr class="fragment">
+                    <td>Enterprise Version</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Heroku </td>
+                </tr>
+                <tr class="fragment">
+                    <td>JupyterHub </td>
+                </tr>
+                <tr class="fragment">
+                    <td>PythonAnywhere</td>
+                </tr>
+                <tr class="fragment">
+                    <td>AWS</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Google Cloud Platform</td>
+                </tr>
+            </table>
+        </section>
+        <!-- Support & Online Prevalence -->
+        <section>
+            <h2>Support & Online Prevalence</h2>
+        </section>
+        <section>
+            <table class="tables">
+                <tr class="fragment">
+                    <td>Google</td>
+                    <td>905,000 results</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Stack Overflow</td>
+                    <td>500 results.</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Dash GitHub</td>
+                    <td>558 closed <br> 392 open</td>
+                </tr>
+            </table>
+        </section>
+        <!-- To Dash or Not to Dash? -->
+        <section>
+            <h2>To Dash or Not to Dash?</h2>
+        </section>
+        <section>
+            <h4></h4>
+        </section>
+        <section>
+            <h4>Alternatives</h4>
+            <table class="tables">
+                <tr>
+                    <td>Dash</td>
+                    <td>-</td>
+                    <td>Streamlit</td>
+                </tr>
+                <tr>
+                    <td>Dash</td>
+                    <td>-</td>
+                    <td>Panel</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h4>Conclusions</h4>
+        </section>
+        <!-- End -->
+        <section>
+            <h2>Thank You for Listening</h2>
+        </section>
+    </div>
+
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/zoom/zoom.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/search/search.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+        controls: false,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+    });
+
+</script>
+
+</body>
+</html>
