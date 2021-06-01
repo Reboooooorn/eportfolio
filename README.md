@@ -4,10 +4,9 @@
 # link to the code examples:
 [code](https://github.com/Reboooooorn/eportfolio_code_example)
 
-# link to the code examples
-[examples](https://github.com/Reboooooorn/eportfolio_code_example)
 # Plotly Dash documentation: 
 [Dash Plotly User Guide](https://dash.plotly.com/)
+
 # Interesting Blog Posts:
 [Introducing Dash](https://medium.com/plotly/introducing-dash-5ecf7191b503)
 
