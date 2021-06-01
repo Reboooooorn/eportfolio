@@ -10,7 +10,6 @@
 [Dash Plotly User Guide](https://dash.plotly.com/)
 # Interesting Blog Posts:
 [Introducing Dash](https://medium.com/plotly/introducing-dash-5ecf7191b503)
-
 [Interactive and scalable dashboards with Vaex and Dash](2https://medium.com/plotly/interactive-and-scalable-dashboards-with-vaex-and-dash-9b104b2dc9f0)
 
 # Alternatives
