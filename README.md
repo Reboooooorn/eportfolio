@@ -1,6 +1,10 @@
-#link to the slides:
+# link to the slides:
 [slides](https://reboooooorn.github.io/eportfolio/)
+<<<<<<< HEAD
 #link to the code examples:
+=======
+# link to the code examples
+>>>>>>> 718f4d413b37655f9498c96ca079b124f478be63
 [examples](https://github.com/Reboooooorn/eportfolio_code_example)
 #Plotly Dash documentation: 
 [Dash Plotly User Guide](https://dash.plotly.com/)
