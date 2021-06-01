@@ -1,7 +1,7 @@
 # link to the slides:
 [slides](https://reboooooorn.github.io/eportfolio/)
 
-#link to the code examples:
+# link to the code examples:
 [code](https://github.com/Reboooooorn/eportfolio_code_example)
 
 # link to the code examples
